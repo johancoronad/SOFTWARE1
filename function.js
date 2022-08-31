@@ -236,21 +236,15 @@ alert("cantidad de kilos erroneo");
     }
 }
 function interes(){
-    var a;
-    var e;
-    var b;
-    var c;
-    var d;
-
-    a=parseInt(prompt("por favor digite la cantidad de dinero"));
-    e=parseInt(prompt("por favor digite la cantidad de años a evaluar las ganancias"));
-
-    b= (a/100)*2;
-    c= b*12;
-    d=c*e;
-
-    alert("la ganacia que tendra en la cantidad de " +e+"años es de "+d);
-
-}
+    var A;
+    var B; 
+    var C; // Intereses
+    var D; // Ganancias (Valor total)
+    A = parseInt(prompt("Por favor ingresa capital invertido:"));
+    B = parseInt(prompt("Ingresa el # de años con tu capital invertido"));
+    C = A * .24 * B;
+    D = A + C;
+        alert("La ganancia total por el capital invertido es $:" + D)
+ }
 
 
